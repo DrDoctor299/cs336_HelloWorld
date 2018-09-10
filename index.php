@@ -1,1 +1,1 @@
-<li>             <a href="./lab/1/index.html">HW 1 </a>         </li>
+<li>             <a href="./lab/1/index.html">Lab 1</a>         </li>
