@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hash Tables</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <header>
+            <h1>Hash Tables</h1>
+        </header>        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="binary.html">Binary Search</a>
+            <a href="linear.html">Linear Search</a>
+            <a id = "here" href="hash.html">Hash Tables</a>
+        </nav>
+        
+        <br/><br/>
+        
+        <main> 
+            <figure>
+                
+            </figure>
+            
+            <div id="hashExplain">
+                <p> Hash Tables are a unique kind of combination of search and data structure. Hash tables consist of key/value pairs, with the keys being used to look up their corresponding values.</p>
+                <p> The algorithm does this by <strong>hashing</strong> the key to return a <strong>hash value</strong>. <strong>Hashing</strong> is a process which takes in any string input, and outputs a long string of specified length.</p>
+                <p> This string is repeatable, but not reversable, and is also <strong>not guaranteed to be unique</strong> to each key.</p>
+                <p> The table hashes each new key and uses the hash value to assign the corresponding value an index.</p>
+                <p> Because the hashes are likely, but <strong>not guaranteed</strong> to be unique, the table must have some way to deal with two keys hashing to the same value (called a <strong>hash collision</strong>.</p>
+                <p> Hash tables are fast relative to other search options, with the search time remaining constant regardless of the number of items the algorithm has to search through.</p>
+            </div>
+        </main>
+        
+        <div id="hashExample">
+            <figure id="hashExampleImg">
+                <img src="img/hash.png" alt = "Hashtable Example Image">
+                <cite>
+                    Hash Table
+                    <a href="https://en.wikipedia.org/wiki/File:Hash_table_3_1_1_0_1_0_0_SP.svg">https://en.wikipedia.org/wiki/File:Hash_table_3_1_1_0_1_0_0_SP.svg</a>
+                </cite>
+            </figure>
+        
+            <div id="hashExampleText">
+            <p>Here we see a phone number lookup table in an address book application. </p>
+            <p>The key John Smith is a string and is it fed into the hashing function.</p>
+            <p>The function outputs a hash, the value of which is used to find the appropriate index of the table (referred to as <strong>buckets</strong>)</p>
+            </div>
+            
+        </div>
+        
+        <div id="requirements">
+            <h1>Requirements</h1>
+            <p>Hash lookup functions are required to be preformed on lookup tables</p>
+            <p>Hash lookup must have a way to deal with potential hash collisions (one bucket containing the values of two different keys).</p>
+        </div>
+        
+        <cite>
+            Wikipedia: Hash Table
+            <a href ="https://en.wikipedia.org/wiki/Hash_table">Hash Table</a>
+        </cite>
+        
+        <footer>
+            <hr>
+                CST 336. 2017&copy; Williams <br/>
+                <strong>Disclaimer:</strong> The information in this webpage is fictitious. <br/>
+                
+                It is used for academic purposes only.
+        </footer>
+    </body>
+</html>

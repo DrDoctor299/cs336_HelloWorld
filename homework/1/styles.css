@@ -1,0 +1,107 @@
+head, nav, header {
+    text-align: center;
+}
+
+
+
+main {
+    margin-right: 30px;
+    
+}
+
+#author {
+    text-align: right;
+}
+
+#here {
+    font-size: 2.0em;
+    opacity: 1.0;
+}
+
+nav a {
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color:#444443;
+    opacity: 0.5;
+}
+
+nav a:hover {
+    border-bottom: 2px grey solid;
+    font-size: 1.9em;
+    transition: .2s;
+    opacity: 0.9;
+}
+
+body {
+    background-color:#bbc187;
+}
+
+q {
+    font-style: italic;
+    font-size: 1.2em;
+    color:#60605f;
+}
+
+#homeText {
+    float: right;
+    width: 500px;
+}
+
+footer {
+    clear: both;
+    opacity: 0.7;
+}
+
+#exBinary {
+    border: 2px solid black;
+    padding:10px;
+}
+
+#exBinaryText {
+    border: 1px dashed #60605f;
+    padding:10px;
+}
+
+#requirements {
+    color: red;
+    background-color: grey;
+    padding: 10px;
+    border: 3px solid red;
+    margin: 10px;
+    clear: both;
+}
+
+#hashExample {
+    float: right;
+    width: 500px;
+    
+}
+
+#hashExplain {
+    width: 500px;
+    float: left;
+}
+
+#hashExampleText {
+    border: 1px dashed #60605f;
+    padding:10px;    
+}
+
+#hashExampleImg {
+    outline:2px solid black;
+    padding:10px;   
+}
+
+strong {
+    color: red;
+}
+
+cite {
+    font-size: .8em;
+}
+
+cite a {
+    color: green;
+}

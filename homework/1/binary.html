@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Binary Search</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <header>
+            <h1>Binary Search</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a id = "here" href="binary.html">Binary Search</a>
+            <a href="linear.html">Linear Search</a>
+            <a href="hash.html">Hash Tables</a>
+        </nav>
+        
+        <br/><br/>
+        
+        <main> 
+            <div>
+                <p>The binary search is a method by which we can search through a <strong>sorted array</strong> (or <strong>Binary Search Tree (BST)</strong>)</p>
+                <p>It functions by taking a target value, and comparing it to the middle-most value of the data structure (the middle index of an array, or the root of a BST</p>
+                <p>In the case that the value is higher than the middle, it repeats on the middle-most value of the higher half, and the same for the lower half if the value was lower.</p>
+                <p>This process is repeated until the target value is found, or the array cannot be divided any further (or the tree has no more child nodes)</p>
+            </div>
+        </main>
+        
+        <figure id="exBinary">
+            <img src="img/binary.png" alt="Visualization of Binary Search"/>
+            
+            <cite>
+                Binary Search Depiction
+                <a href = "https://commons.wikimedia.org/wiki/File:Binary_Search_Depiction.svg">https://commons.wikimedia.org/wiki/File:Binary_Search_Depiction.svg</a>
+            </cite>
+        </figure>
+        
+        <div id="exBinaryText">
+            <p>In this example, the target value is <strong>7</strong>.</p>
+            <p>The algorithm first finds the middle-most value, in this case <strong>14</strong>.</p>
+            <p>Since <strong>7 &lt; 14</strong>, the algorithm finds the middle-most value to the left, <strong>6</strong>.</p>
+            <p>The comparison is made again, this time, <strong>7 > 6</strong>, so the middle-most value to the right is selected.</p>
+            <p>We're getting close now! Our value is now <strong>8</strong>; we compare (<strong>7 &lt; 8</strong>), and find the middle-most value to the left.</p>
+            <p>After checking this value agains our target, we know we've found it (<strong>7 = 7</strong>)!</p>
+        </div>
+        
+        <div id="requirements">
+            <h1>Requirements</h1>
+            <p>Binary search requires either random access, or a binary search tree</p>
+            <p>Binary search only works on sorted data</p>
+        </div>
+        
+        <cite>
+            Wikipedia: Binary Search Algorithm
+            <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">https://en.wikipedia.org/wiki/Binary_search_algorithm</a>
+        </cite>
+        
+        <footer>
+            <hr>
+                CST 336. 2017&copy; Williams <br/>
+                <strong>Disclaimer:</strong> The information in this webpage is fictitious. <br/>
+                
+                It is used for academic purposes only.
+        </footer>
+    </body>
+</html>
