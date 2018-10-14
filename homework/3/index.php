@@ -3,6 +3,9 @@ session_start();
 $num = $_POST['num'];
 $op = $_POST['operator'];
 $hist = $_POST['history'];
+if(!isset($_SESSION['eqHistory'])) {
+    $_SESSION['eqHistory'] = array();
+}
 ?>
 
 
@@ -79,11 +82,13 @@ $hist = $_POST['history'];
                     //     echo "Please select an operation to perform<br>";
                     // }
                     
-                    
-                    if ($result == NULL) {
+                    if(isset($_POST['num']) || isset ($_POST['operator'])) {
+                        if ($result == NULL) {
                         $result = "ERROR";
                     }
-                    echo "RESULT: ".$result."<br>";
+                    echo "RESULT: ".$result."<br>";    
+                    }
+                    
                     
                     ?>
             </div>
@@ -94,14 +99,18 @@ $hist = $_POST['history'];
 
 <?php
 
-if ($hist == 'rec') {
+if ($hist == 'record') {
     $currenteq = $num[0]." ".$op." ".$num[1]." = ".$result;
-    array_push($_SESSION['eqHistory[]'], $currenteq);
+    array_push($_SESSION['eqHistory'], $currenteq);
 }
 
-echo "<ul>";
-foreach ($_SESSION['eqHistory'] as $s) {
-    echo "<li>".$s."</li>";
+
+if($_SESSION['eqHistory']) {
+    echo "<ul>";
+    foreach ($_SESSION['eqHistory'] as $s) {
+        echo "<li>".$s."</li>";
+    }
+    echo "</ul>";
 }
-echo "</ul>";
+
 ?>
