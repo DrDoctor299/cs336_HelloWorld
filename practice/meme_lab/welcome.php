@@ -1,12 +1,12 @@
-<?php
-  include 'database.php';
-  $dbConn = getDatabaseConnection(); 
-  $sql = "SELECT * FROM all_memes ORDER BY RAND() LIMIT 1"; 
-  $statement = $dbConn->prepare($sql); 
-  $statement->execute(); 
-  $result = $statement->fetchAll(); 
+// <?php
+//   include 'database.php';
+//   $dbConn = getDatabaseConnection(); 
+//   $sql = "SELECT * FROM all_memes ORDER BY RAND() LIMIT 1"; 
+//   $statement = $dbConn->prepare($sql); 
+//   $statement->execute(); 
+//   $result = $statement->fetchAll(); 
   
-?>
+// ?>
 
 <!DOCTYPE html>
 <html>
