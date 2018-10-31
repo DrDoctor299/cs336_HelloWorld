@@ -59,8 +59,8 @@ function getDatabaseConnection() {
 // temporary test code
 //$dbConn = getDatabaseConnection(); 
 
-echo "SERVER!!!!!!!!!!!!!!!!!! <br/>"; 
-echo $_SERVER['SERVER_NAME'];
-echo "<br>"; 
+// echo "SERVER!!!!!!!!!!!!!!!!!! <br/>"; 
+// echo $_SERVER['SERVER_NAME'];
+// echo "<br>"; 
 
 ?>
