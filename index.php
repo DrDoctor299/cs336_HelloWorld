@@ -3,5 +3,5 @@
 <li>             <a href="./lab/2/777/index.php">Lab 2</a>  </li>
 <li>             <a href="./lab/5/index.php">Lab 5</a>  </li>
 <li>             <a href="./homework/3/index.php">Homework 3</a>  </li>
-<li>             <a href="./practice/meme_lab/welcome.php">Meme Lab</a>  </li>
+<li>             <a href="./lab/6/welcome.php">Lab 6</a>  </li>
 
