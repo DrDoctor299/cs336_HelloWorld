@@ -29,6 +29,12 @@ function searchForMemes($userID = '') {
       $sql .= " AND meme_type = '{$_POST['meme-type-search']}'"; 
     }
     
+    if(isset($_POST['order'])) {
+      $sql .= " ORDER BY create_date";
+      if($_POST['create_date'] == "newest-first") {
+        $sql .= " DESC";
+      }
+    }
     $statement = $dbConn->prepare($sql); 
     $statement->execute(array(':search' => $search)); 
     $records = $statement->fetchAll(); 
