@@ -78,7 +78,7 @@ function go() {
 		document.getElementById('lblPaper').style.backgroundColor = 'yellow';
 		if(playerChoice=='rock') {
 			txtEndTitle.innerHTML = 'Paper covers Rock';
-			txtEndMessage.innerHTML = 'YOU WIN';
+			txtEndMessage.innerHTML = 'YOU LOSE';
 		}
 		if(playerChoice=='paper') {
 			txtEndTitle.innerHTML = '';
@@ -86,7 +86,7 @@ function go() {
 		}
 		if(playerChoice=='scissors') {
 			txtEndTitle.innerHTML = 'Scissors cuts Paper';
-			txtEndMessage.innerHTML = 'YOU LOSE';
+			txtEndMessage.innerHTML = 'YOU WIN';
 		}
 	}
 	else if(numChoice==2) {
@@ -95,11 +95,11 @@ function go() {
 		document.getElementById('lblScissors').style.backgroundColor = 'yellow';
 		if(playerChoice=='rock') {
 			txtEndTitle.innerHTML = 'Rock smashes Scissors';
-			txtEndMessage.innerHTML = 'YOU LOSE';
+			txtEndMessage.innerHTML = 'YOU WIN';
 		}
 		if(playerChoice=='paper') {
 			txtEndTitle.innerHTML = 'Scissors cuts Paper';
-			txtEndMessage.innerHTML = 'YOU WIN';
+			txtEndMessage.innerHTML = 'YOU LOSE';
 		}
 		if(playerChoice=='scissors') {
 			txtEndTitle.innerHTML = '';
