@@ -1,0 +1,21 @@
+header {
+    text-align: center;
+    font-size: 2em;
+}
+form {
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: grey;
+    border-width: 3px;
+}
+.input {
+    padding: 5px;
+    font-family: georgia;
+}
+a {
+    margin-left: auto;
+    margin-right: auto;
+}
