@@ -8,3 +8,4 @@
 <li>             <a href="./lab/8/index.html">Lab 8</a>  </li>
 <li>             <a href="./lab/9/index.php">Lab 9</a>  </li>
 <li>             <a href="./homework/4/index.html">Homework 4</a>  </li>
+<li>             <a href="./lab/10/index.php">Lab 10</a>  </li>
